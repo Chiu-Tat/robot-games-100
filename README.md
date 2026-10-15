@@ -1,5 +1,7 @@
 # Robot Games 100
 
+![Twenty-five robots, each playing a different game](images/cover.png)
+
 One hundred sports, played by robots. Running, jumping, and every kind of ball — then water, ice, wheels, and the gym.
 
 This repository is the catalog and the plan. The pages you can open today are animation: a robot acting out each sport so the set of games is visible. The work after that is simulation. Each game gets its own reinforcement-learning policy, trained in physics rather than posed by hand, and a single game can take several days. The first one is the 100m sprint.
@@ -47,6 +49,7 @@ The next game reuses the same robot and the same training loop. Only the scene a
 ## Layout
 
 ```
+images/cover.png        README cover, the field of robots
 index.html              catalog page
 css/arena.css           page styles
 js/catalog.js           the 100 games
