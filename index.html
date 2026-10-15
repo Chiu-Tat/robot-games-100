@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Robot Games 100</title>
+    <meta
+      name="description"
+      content="One hundred sports played by robots: running, jumping, and every kind of ball."
+    />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ffb020'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-size='26' font-family='Arial Narrow,sans-serif' fill='%231a1204'%3E100%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Outfit:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/arena.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="top">
+        <a class="brand" href="#catalog">
+          <span class="brand-mark">100</span>
+          <span>
+            <strong>ROBOT GAMES</strong>
+            <em>Running, jumping, and every kind of ball</em>
+          </span>
+        </a>
+      </header>
+
+      <section class="hero" aria-label="Featured game">
+        <div>
+          <p class="eyebrow">Exhibition</p>
+          <h1>A hundred games, played by robots.</h1>
+          <p class="lede">
+            Watch a robot run, jump, throw, and play every kind of ball — plus water, ice, wheels, and the gym.
+          </p>
+          <div class="now">
+            <div class="now-index" id="hero-index">01</div>
+            <div>
+              <h2 id="hero-name">100m Sprint</h2>
+              <p id="hero-summary"></p>
+            </div>
+          </div>
+          <div class="transport">
+            <button type="button" id="hero-prev">Previous</button>
+            <button type="button" id="hero-play" class="primary">Pause</button>
+            <button type="button" id="hero-next">Next</button>
+            <button type="button" id="hero-random">Surprise</button>
+          </div>
+        </div>
+        <div class="hero-stage">
+          <canvas id="hero-canvas" width="640" height="400" aria-label="Featured robot"></canvas>
+          <div class="tour-bar" id="tour-bar"></div>
+        </div>
+      </section>
+
+      <section id="catalog">
+        <div class="toolbar">
+          <div class="search-row">
+            <input id="search" type="search" placeholder="Search 100 games" autocomplete="off" />
+            <p class="result-count" id="result-count"></p>
+          </div>
+          <div class="filters" id="filters" role="group" aria-label="Categories"></div>
+        </div>
+        <div class="grid" id="grid"></div>
+        <p class="empty" id="empty" hidden>No game matches that search.</p>
+      </section>
+
+      <footer class="foot">100 games · 12 families · 0 humans on the field</footer>
+    </div>
+
+    <dialog id="viewer" aria-labelledby="viewer-name">
+      <div class="viewer-card">
+        <div class="viewer-stage">
+          <canvas id="viewer-canvas" width="960" height="540"></canvas>
+        </div>
+        <div class="viewer-body">
+          <div class="viewer-top">
+            <div>
+              <p class="eyebrow" id="viewer-cat"></p>
+              <h2 id="viewer-name"></h2>
+            </div>
+            <button type="button" class="close-x" id="viewer-close" aria-label="Close">×</button>
+          </div>
+          <p class="summary" id="viewer-summary"></p>
+          <div class="transport">
+            <button type="button" id="viewer-prev">Previous</button>
+            <button type="button" id="viewer-next">Next</button>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="js/catalog.js?v=2"></script>
+    <script src="js/stage.js?v=2"></script>
+    <script src="js/main.js?v=2"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "category": "kinetic-type",
+  "asset_needs": [],
+  "brief": "Twelve-second unnarrated cover. A title card clears to one robot, who sprints, plays basketball, then kicks a soccer ball. The camera then scales out, with that same robot staying centered, first to a 3 by 3 array and then to a 5 by 5 field of robots each playing a different game.",
+  "duration": 12,
+  "aspect": "1920x1080",
+  "beats": [
+    { "at": 0, "what": "Cover card: 100 / ROBOT GAMES" },
+    { "at": 2.5, "what": "One robot, sprint then basketball then soccer" },
+    { "at": 4.9, "what": "Scale out to three cells across" },
+    { "at": 7.5, "what": "Scale further to the full five by five" },
+    { "at": 10.2, "what": "Hold on the field with a 100 games lockup" }
+  ]
+}
