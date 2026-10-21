@@ -1,0 +1,43 @@
+{
+  "distance_m": 100.0,
+  "runners": [
+    {
+      "id": "g1",
+      "name": "Unitree G1",
+      "lane": 3,
+      "commanded_speed_mps": 2.0,
+      "distance_m": 105.0,
+      "time_s": 58.68,
+      "fallen": false,
+      "policy": "sprint\\_vendor\\unitree_rl_gym\\deploy\\pre_train\\g1\\motion.pt",
+      "place": 1
+    },
+    {
+      "id": "h1",
+      "name": "Unitree H1",
+      "lane": 5,
+      "commanded_speed_mps": 1.6,
+      "distance_m": 105.0,
+      "time_s": 65.25,
+      "fallen": false,
+      "policy": "sprint\\_vendor\\unitree_rl_gym\\deploy\\pre_train\\h1\\motion.pt",
+      "place": 2
+    },
+    {
+      "id": "h1_2",
+      "name": "Unitree H1-2",
+      "lane": 7,
+      "commanded_speed_mps": 1.6,
+      "distance_m": 100.0,
+      "time_s": 73.16,
+      "fallen": false,
+      "policy": "sprint\\_vendor\\unitree_rl_gym\\deploy\\pre_train\\h1_2\\motion.pt",
+      "place": 3
+    }
+  ],
+  "start_x_after_settle": {
+    "g1": 0.04353136470639816,
+    "h1": 0.019514803259309384,
+    "h1_2": 0.029816413117443753
+  }
+}

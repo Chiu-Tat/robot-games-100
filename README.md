@@ -58,4 +58,4 @@ js/main.js              filters, search, and the floor show
 videos/robot-games-cover/   cover film
 ```
 
-Simulation tasks are not in the tree yet. They will sit beside the catalog, one folder per game id, starting with `sprint`.
+The first game is `sprint/`. It is an eight-lane 100 m straight in MuJoCo. Unitree G1, H1, and H1-2 each run in their own lane, driven by that model's published locomotion policy. `python sprint/race.py` records the race. `python sprint/watch.py` plays `sprint/100m_race.npz` back. `python sprint/train.py` trains a sprint policy on the same track.

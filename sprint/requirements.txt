@@ -1,0 +1,7 @@
+mujoco>=3.2
+torch
+numpy
+pillow
+imageio
+imageio-ffmpeg
+pyyaml
